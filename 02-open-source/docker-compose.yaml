@@ -7,6 +7,8 @@ services:
     environment:
       - discovery.type=single-node
       - xpack.security.enabled=false
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
     ports:
       - "9200:9200"
       - "9300:9300"
@@ -20,6 +22,7 @@ services:
       - "11434:11434"
 
 volumes:
+  esdata:
   ollama:
 
 
