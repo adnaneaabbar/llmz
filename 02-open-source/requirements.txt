@@ -1,0 +1,2 @@
+openai==1.35.6
+elasticsearch==8.14.0
