@@ -39,9 +39,8 @@ def ingest_api_data(*args, **kwargs) -> List[Dict]:
         timeout=timeout
     )
     response.raise_for_status()
-    result = response.json()
-    print("Number of courses :", len(result))
-    return [result]
+
+    return [response.json()]
 
 
 @test
