@@ -1,0 +1,178 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: rager/data_loaders/bewitching_omega.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - ingest
+  has_callback: false
+  language: python
+  name: Bewitching omega
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: bewitching_omega
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: rager/transformers/iridescent_ion.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - chunking
+  has_callback: false
+  language: python
+  name: Iridescent ion
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks: []
+  uuid: iridescent_ion
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file:
+      content: null
+      extension: py
+      language: python
+      modified_timestamp: 1723506573
+      name: phantasmal_eclipse.py
+      output: null
+      path: /home/src/llm/rager/data_exporters/phantasmal_eclipse.py
+      relative_path: llm/rager/data_exporters/phantasmal_eclipse.py
+      size: 2265
+    file_source:
+      path: rager/data_exporters/phantasmal_eclipse.py
+    templates:
+      elasticsearch:
+        variables:
+          connection_string: http://elasticsearch:9200
+          dimensions: null
+          index_name: documents
+          number_of_replicas: 0
+          number_of_shards: 1
+          vector_column_name: embedding
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - vector_database
+  has_callback: false
+  language: python
+  name: Phantasmal eclipse
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks: []
+  uuid: phantasmal_eclipse
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: rager/transformers/scintillating_hex.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - tokenization
+  has_callback: false
+  language: python
+  name: Scintillating hex
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks: []
+  uuid: scintillating_hex
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: rager/transformers/galactic_horizon.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - embed
+  has_callback: false
+  language: python
+  name: Galactic horizon
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks: []
+  uuid: galactic_horizon
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file:
+      content: null
+      extension: py
+      language: python
+      modified_timestamp: 1723507187
+      name: infinite_sublime.py
+      output: null
+      path: /home/src/llm/rager/data_loaders/infinite_sublime.py
+      relative_path: llm/rager/data_loaders/infinite_sublime.py
+      size: 1493
+    file_source:
+      path: rager/data_loaders/infinite_sublime.py
+    templates:
+      elasticsearch:
+        variables:
+          chunk_column: chunk
+          connection_string: http://elasticsearch:9200
+          index_name: documents
+          vector_column_name: embedding
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - iterative_retrieval
+  has_callback: false
+  language: python
+  name: Infinite sublime
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: infinite_sublime
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-08-12 22:44:55.118870+00:00'
+data_integration: null
+description: null
+execution_framework: rag
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: Refulgent hex
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: refulgent_hex
+variables:
+  index_name: documents_20240813_2919
+variables_dir: /home/src/mage_data/rager
+widgets: []
